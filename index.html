@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pac Bosh Car Service</title>
+</head>
+<body>
+    <header>
+        <div class="header_logo" onclick="location.reload()">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header_nav">
+            <a href="#hero" class="active">Início</a>
+            <a href="#services">Serviços</a>
+            <a href="#about_us">Sobre Nós</a>
+            <a href="#take_bring">Leva e Traz</a>
+            <a href="#differences">Diferenciais</a>
+            <a href="#contacts">Contatos</a>
+        </div>
+        <div class="header_btn">
+            <button onclick="window.location.href='https://wa.me/5516993530154?text=Olá,%20gostaria%20de%20mais%20informações!'">Fale Conosco</button>
+        </div>
+        <div class="header_menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header_menu_content">  
+            <i class="fa-solid fa-xmark" onclick="fecharMenu()"></i>    
+            <a href="#hero" class="active">Início</a>
+            <a href="#services">Serviços</a>
+            <a href="#about_us">Sobre Nós</a>
+            <a href="#take_bring">Leva e Traz</a>
+            <a href="#differences">Diferenciais</a>
+            <a href="#contacts">Contatos</a>
+        </div>
+    </header>
+
+    <section class="hero fade-in-scroll" id="hero">
+        <div class="hero_left">
+            <div class="hero_left_title">
+                <img src="images/logo.png" alt="pac">
+                <div class="hero_left_title_span">
+                    <span id="title">Pac Boosh</span>
+                    <span id="subtitle">Mecanica Automotiva</span>
+                </div>
+            </div>
+            <div class="hero_left_slogan">
+                <p>O SEU <span class="destaque">AUTO CENTER</span> NA CIDADE DE <span class="destaque">PITANGUEIRAS</span></p>
+            </div>
+            <div class="hero_left_slogan_social">
+                <a href="https://www.instagram.com/pacboschcar/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:paccentroautomotivo@gmail.com?subject=Contato&body=Olá, gostaria de agendar um orçamento." target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/5516993530154?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <img src="images/logo.png" alt="pac" class="img-disable">
+            </div>
+        </div>
+
+        <div class="hero_divider-1"></div>
+        <div class="hero_divider-2"></div>
+        <div class="hero_divider-3"></div>
+
+        <div class="hero_right">
+            <img src="images/HeroImage.JPG" alt="heroImage">
+        </div>
+    </section>
+
+    <section class="info-section fade-in-scroll">
+        <div class="info-box">
+            <i class="fa-solid fa-clock"></i>
+            <div class="text">
+                <strong>Atendimento</strong>
+                <p>Segunda a sexta, das 07h30 às 18h30.</p>
+            </div>
+        </div>
+
+        <div class="info-box removetwo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="text">
+                <strong>Pagamentos</strong>
+                <p>Cartão, transferência ou Pix</p>
+            </div>
+        </div>
+
+        <div class="info-box remove">
+            <i class="fa-solid fa-address-book"></i>
+            <div class="text">
+                <strong>Contato</strong>
+                <p>Estamos sempre disponíveis para ajudar!</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <i class="fa-solid fa-award"></i>
+            <div class="text">
+                <strong>Garantia</strong>
+                <p>Temos garantia de pelo menos 3 meses.</p>
+            </div>
+        </div>
+    </section>      
+
+    <section class="services fade-in-scroll" id="services">
+        <h2>Serviços</h2>
+        <div class="services_container">
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/alinhamento.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Alinhamento e Balanceamento</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/oleo.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Troca de Óleo e Filtros</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/bateria.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Troca de Bateria</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/frio.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Manutençao do sistema de freio</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/pneu.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Troca e rodizio de Pneus</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/ar-condicionado.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Higienização do Ar Condicionado</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/suspensao.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Manutenção da Suspensão</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/scaner.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Diagnóstico com scanner</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/alternador.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Alternador e motor de partida</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/embreagem.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Manutenção da embreagem</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/retifica.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Retífica do motor</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/vela.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Troca de velas e cabos</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/correia.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Substituição de correias</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/revisao.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Revisão Preventiva</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/escape.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Sistema de escape</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/direcao.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Sistema de direção</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/furo.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Reparo de furos no pneu</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/arreficimento.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Sistema de arrefecimento</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/palheta.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Troca de palhetas</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/lampada.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Substituição de lâmpadas</span>
+                </div>
+            </div>
+            <div class="services_icons">
+                <div class="services_icons_img">
+                    <img src="images/servicesImages/combustivel.png">
+                </div>
+                <div class="services_icons_text">
+                    <span>Sistema de combustível</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_us fade-in-scroll" id="about_us">
+        <div class="info">
+            <h2>Mais Sobre Nós</h2>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Av. das Pitangueiras, 1836 - Centro, Pitangueiras</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p>Abertos de segunda à sexta das 08:00 às 18:30</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-smile"></i>
+                <p>Trabalhamos de modo personalizado para melhor atendê-lo(a)</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-clipboard"></i>
+                <p>Estamos à mais de 14 anos no mercado</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-calendar-alt"></i>
+                <p>Buscamos seu carro, ligue para agendar</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>(16) 3952-3301</p>
+            </div>
+        </div>
+        <div class="map">
+            <h2>Onde Nos Encontrar</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6389497452674!2d-48.21546908839234!3d-21.007105186121994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b97cec9a6a1eff%3A0xbc68dc56662fbb1a!2sBosch%20Car%20Service%20-%20Pac!5e0!3m2!1spt-BR!2sbr!4v1740058898414!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="take_bring fade-in-scroll" id="take_bring">
+        <h2>Leva e Traz</h2>
+        <div class="take_bring_container">
+            <div class="take_bring_left">
+                <h3>Você já conhece nosso sistema "leva e traz"?</h3>
+                <span>Veja como é simples:</span>
+                <ul>
+                    <li>Você pode agendar o serviço</li>
+                    <li>Buscamos seu carro em sua residência ou onde estiver</li>
+                    <li>Fazemos o orçamento e pedimos autorização do serviço</li>
+                    <li>Realizamos o serviço de acordo com o que foi aprovado</li>
+                    <li>Entregamos o veículo no lugar de sua preferencia</li>
+                    <li>Levamos a máquina de cartão ou o troco até você</li>
+                </ul>
+                <button onclick="window.location.href='https://wa.me/5516993530154?text=Olá,%20gostaria%20de%20mais%20informações!'">Agende seu serviço</button>
+            </div>
+            <div class="take_bring_right">
+                <img src="images/levatraz.JPG" alt="Imagem do modelo leva e traz">
+            </div>
+        </div>
+    </section>
+
+    <section class="differences fade-in-scroll" id="differences">
+        <h2>Diferenciais</h2>
+        <h4>Cuidar do seu carro nunca foi tão simples e confiável!</h4>
+        <span>Visite-nos e descubra o diferencial de um atendimento feito para você, nossos compromissos são:</span>
+        <ul>
+            <li>Oferecer um atendimento especializado e de alta qualidade;</li>
+            <li>Empregar tecnologia de última geração para garantir maior precisão;</li>
+            <li>Estabelecer vínculos sólidos e duradouros com nossos clientes.</li>
+        </ul>
+        <div class="differences_container">
+            <div class="differences_card">
+                <img src="images/differenceImages/atendimento.jpg" alt="foto atendimento">
+                <h3>Atendimento Individualizado</h3>
+                <p>No Pac Bosch Car Service, cada cliente recebe um atendimento único e atencioso. Nossa equipe está sempre disponível para entender suas necessidades e oferecer a solução ideal.</p>
+            </div>
+            <div class="differences_card">
+                <img src="images/differenceImages/mecanico.jpg" alt="foto mecanico">
+                <h3>Profissionais Especializados</h3>
+                <p>Contamos com técnicos qualificados e experientes, trabalhando com produtos e serviços de alta qualidade para manter o desempenho e a segurança do seu veículo.</p>
+            </div>
+            <div class="differences_card">
+                <img src="images/differenceImages/pagamento.jpg" alt="foto cartao">
+                <h3>Facilidade no Pagamento</h3>
+                <p>Oferecemos diversas opções de pagamento, incluindo parcelamento especial em até 12 vezes sem juros. Assim, você cuida do seu carro sem comprometer o seu orçamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts" class="fade-in-scroll">
+        <div class="footer_slogan">
+            <img src="images/logo.png" alt="">
+            <h3>Pac Bosh Car Service</h3>
+        </div>
+        
+        <div class="contatcs">
+            <h3>Nossos Contatos:</h3>
+            <div class="contacts_container">
+                <div class="line_contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+551639523301">(16) 3952-3301</a>
+                </div>
+                <div class="line_contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:paccentroautomotivo@gmail.com?subject=Contato&body=Olá, gostaria de agendar um orçamento." target="_blank">paccentroautomotivo@gmail.com</a>
+                </div>
+                <div class="line_contact">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://wa.me/5516993530154?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank">(16) 99353-0154</a>
+                </div>
+                <div class="line_contact">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/pacboschcar/" target="_blank">@pacboschcar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5516993530154?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank" class="whatsapp-button">
+        <img src="images/whatsapp (1).png" alt="WhatsApp" width="60" height="60">
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
