@@ -72,3 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Observa todos os elementos que possuem a classe 'fade-in-scroll'
     elementos.forEach(el => observer.observe(el));
 });
+
