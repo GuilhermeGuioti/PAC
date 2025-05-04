@@ -345,7 +345,6 @@ header {
     background-color: var(--firstBlue);
     border-radius: 20px;
     padding: 10px;
-    cursor: pointer;
 }
 
 .services_icons_text{
