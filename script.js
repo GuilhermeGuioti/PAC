@@ -71,5 +71,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Observa todos os elementos que possuem a classe 'fade-in-scroll'
     elementos.forEach(el => observer.observe(el));
+
+        // Monitorar seções para destacar o link da navbar correspondente
+        const sections = document.querySelectorAll("section[id]");
+
+        const sectionObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const sectionId = entry.target.getAttribute("id");
+                        navLinks.forEach(link => {
+                            link.classList.toggle("active", link.getAttribute("href") === `#${sectionId}`);
+                        });
+                    }
+                });
+            },
+            {
+                root: null,
+                rootMargin: `-${headerHeight}px 0px 0px 0px`, // compensa o cabeçalho fixo
+                threshold: 0.6 // considera visível quando 60% da seção estiver aparecendo
+            }
+        );
+    
+        // Observa todas as seções
+        sections.forEach(section => sectionObserver.observe(section));
+    
 });
 

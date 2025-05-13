@@ -175,7 +175,8 @@ header {
     display: flex;
     position: relative;
     width: 100%;
-    height: 65vh;
+    min-height: 65vh;
+    height: auto;
     overflow: hidden;
     margin-top: 2rem;
 }
@@ -185,12 +186,13 @@ header {
     background-color: var(--body);
     display: flex;
     flex-direction: column;
-    justify-content:end;
+    justify-content:center;
     align-items:flex-start;
     padding-bottom: 5rem;
-    padding-left: 15%;
+    padding-left: clamp(2rem, 10vw, 12rem);
     position: relative;
-    /* clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); */
+    margin: auto 0;
+    /* border: 3px dashed red; */
 }
 
 .hero_right {
@@ -208,7 +210,6 @@ header {
 }
 
 .hero_left_title{
-    /* border: 1px dashed red; */
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -234,13 +235,13 @@ header {
 }
 
 #title{
-    font-size: 4.3rem;
+    font-size: clamp(2rem, 4.5vw, 4.3rem);
     font-weight: 600;
     max-width: 100%;
 }
 
 #subtitle{
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     font-weight: 400;
     color: var(--secondBlue);
 }
@@ -253,7 +254,7 @@ header {
 }
 
 .hero_left_slogan P{
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     max-width: 500px;
     font-weight: 500;
 }
@@ -286,7 +287,7 @@ header {
     align-items: center;
     padding: 20px;
     height: 10rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .info-box {
@@ -408,6 +409,7 @@ header {
 
 .info-item p{
     font-size: 1.3rem;
+    max-width: 550px;
 }
 
 .map iframe {
@@ -567,6 +569,7 @@ header {
     border: 3px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .differences_card img{
@@ -576,8 +579,8 @@ header {
 }
 
 .differences_card h3{
-    margin-block: 1.5rem;
-    font-size: 1.8rem;
+    margin-block: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .differences_card p{
