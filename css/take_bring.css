@@ -1,0 +1,88 @@
+@import url(default.css);
+
+/* LEVA E TRAZ */
+
+.take_bring{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 8%;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+
+.take_bring_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.take_bring h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.take_bring_left{
+    width: 50%;
+    align-self: flex-start;
+}
+
+.take_bring_right{
+    width: 50%;
+    align-self: flex-start;
+}
+
+.take_bring_right img{
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    border: 5px solid #aaa; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.take_bring h3{
+    color: var(--cinza);
+    margin-bottom: 1rem;
+    border-left: 6px solid var(--firstBlue);
+    padding-left: 10px;
+    font-size: 2rem;
+}
+
+.take_bring span{
+    color: var(--secondBlue);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.take_bring ul{
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
+
+.take_bring li{
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.take_bring_left button{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: var(--firstBlue);
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 15px;
+    color: var(--branco);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.take_bring_left button:hover{
+    background-color: var(--secondBlue);
+}

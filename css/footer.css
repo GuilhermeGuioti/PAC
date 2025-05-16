@@ -1,0 +1,97 @@
+@import url(default.css);
+
+/* FOOTER */
+
+footer{
+    background-color: var(--header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10%;
+    padding-block: 2rem;
+    color: var(--branco);
+}
+
+.footer_slogan{
+    display: flex;
+}
+
+.footer_slogan img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.footer_slogan h3{
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.contatcs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contatcs h3{
+    margin-bottom: 2rem;
+    border-left: 6px solid var(--firstBlue);
+    padding-left: 10px;
+    font-size: 2rem;
+}
+
+.contacts_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.line_contact{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.line_contact a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    transition: all ease 0.3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.line_contact a:hover{
+    color: var(--firstBlue);
+}
+
+.line_contact i{
+    font-size: 1.1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}

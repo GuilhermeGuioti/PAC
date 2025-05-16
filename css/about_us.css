@@ -1,0 +1,63 @@
+@import url(default.css);
+
+/* ABOUT US */
+
+.about_us{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--branco);
+    padding-inline: 8%;
+    padding-block: 7rem;
+}
+
+.info, .map {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h2, .map h2 {
+    color: var(--black);
+    margin-bottom: 2rem;
+    border-left: 6px solid var(--firstBlue);
+    padding-left: 10px;
+    font-size: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.1rem;
+    justify-content: flex-start;
+}
+
+.info-item i {
+    font-size: 1.7rem;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.info-item p{
+    font-size: 1.3rem;
+    max-width: 550px;
+}
+
+.map iframe {
+    width: 90%;
+    height: 300px;
+    border: none;
+    border-radius: 20px;
+}
+
+.info {
+    align-self: flex-start;
+}
+
+.map {
+    align-self: flex-start;
+}

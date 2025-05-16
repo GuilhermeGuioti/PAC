@@ -1,0 +1,141 @@
+@import url(default.css);
+
+/* HEADER */
+
+header {
+    background-color: var(--header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5%;
+    padding-block: 1rem;
+    height: 7rem;   
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.header_logo img {
+    width: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header_nav a {
+    padding-inline: 1rem;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.header_btn button {
+    background-color: var(--firstBlue);
+    margin: 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    color: var(--branco);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.header_btn button:hover {
+    background-color: var(--secondBlue);
+}
+
+.header_nav a:hover {
+    color: var(--firstBlue);
+}
+
+.header_nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--firstBlue);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.header_nav a:hover::after {
+    opacity: 1;
+}
+
+.header_nav a.active::after {
+    opacity: 1;
+}
+
+.header_nav a.active {
+    color: var(--firstBlue);
+}
+
+/* header responsivo */
+.header_menu {
+    display: none;
+    padding-right: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_menu i {
+    color: var(--branco);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+
+.header_menu_content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(27, 26, 26, 0.2);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 20px;
+    display: none;
+}
+
+.header_menu_content i{
+    font-size: 2rem;
+    color: var(--branco);
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+    padding-right: 10px;
+}
+
+.header_menu_content.active {
+    display: flex;
+}
+.header_menu.active {
+    display: flex;
+}
+
+.header_menu_content a {
+    display: block;
+    padding: 10px;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.header_menu_content a:hover {
+    background-color: var(--firstBlue);
+    border-radius: 5px;
+}

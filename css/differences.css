@@ -1,0 +1,73 @@
+@import url(default.css);
+
+/* DIFFERENCES */
+
+.differences{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 8%;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+
+.differences h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.differences h4{
+    color: var(--secondBlue);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.differences span{
+    font-size: 1.3rem;
+}
+
+.differences ul{
+    margin-top: 1rem;
+}
+
+.differences li{
+    font-size: 1.3rem;
+}
+
+.differences_container{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.differences_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.differences_card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.differences_card h3{
+    margin-block: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.differences_card p{
+    max-width: 350px;
+    font-size: 1.2rem;
+}
