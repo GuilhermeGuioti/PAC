@@ -61,3 +61,10 @@
 .map {
     align-self: flex-start;
 }
+
+.tel{
+    font-size: 1.3rem;
+    max-width: 550px;
+
+    color: var(--black);
+}
