@@ -231,6 +231,10 @@
 }
 
 @media (max-width: 730px){
+    .hero{
+        min-height: 55vh;
+    }
+
     .services_container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -253,7 +257,7 @@
         border-radius: 10px;
         display: flex;
         margin: 0 auto;
-        margin-top: 2rem;
+        margin-block: 1rem;
         width: 200px;
         height: 100px;
     }
@@ -294,6 +298,11 @@
         font-size: 2rem;
     }
 
+    .hero {
+        min-height: 40vh;
+        height: auto;
+    }
+
     .info-box i {
         font-size: 1.5rem;
         padding-right: 5px;
@@ -324,22 +333,15 @@
     .hero_left_slogan P{
         display: none;
     }
-    #title{
-        font-size: 3.5rem;
-        text-align: center;
-    }
-    #subtitle{
-        font-size: 1rem;
-        text-align: center;
-    }
-    .hero{
-        height: 50vh;
-    }
     .hero_left_slogan_social{
         margin-top: 0;
         display: flex;
         align-items: center;
         align-items: center;
+    }
+
+    #title{
+        text-align: center;
     }
 
     .services_container{
